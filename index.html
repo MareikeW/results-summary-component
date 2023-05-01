@@ -27,6 +27,12 @@
       min-height: 100vh;
     }
 
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     h1 {
       color: hsl(241, 100%, 89%);
       font-size: 1.125rem;
@@ -75,6 +81,42 @@
       padding-bottom: 2.5rem;
       width: 16.25rem;
     }
+
+    .summary-component {
+      margin: 1.5rem auto;
+      width: 19.6875rem;
+    }
+
+    h3 {
+      color: hsl(223, 30%, 27%);
+      font-size: 1.125rem;
+      line-height: 1.4375rem;
+      padding-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      color: hsla(223, 30%, 27%, 0.5);
+    }
+
+    li {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    li strong {
+      color: hsl(223, 30%, 27%);
+    }
+
+    .reaction {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+      border-radius: 12px;
+      border: solid 1px black;
+    }
+
+    .reaction .category {
+      color: hsl(0, 100%, 67%);
+    }
   </style>
 </head>
 <body>
@@ -86,28 +128,30 @@
     <p>You scored higher than 65% of the people who have taken these tests.</p>
   </div>
 
-  <div>
+  <div class="summary-component">
     <h3>Summary</h3>
 
-    <div>
-      <p><span>Reaction</span>
-        <strong>80</strong> / 100</p>
-    </div>
+    <ul>
+      <li class="flex reaction">
+        <span class="category">Reaction</span>
+          <span><strong>80</strong> / 100</span>
+      </li>
 
-    <div>
-      <p><span>Memory</span>
-        <strong>92</strong> / 100</p>
-    </div>
+      <li>
+        <span>Memory</span>
+          <strong>92</strong> / 100
+      </li>
 
-    <div>
-      <p><span>Verbal</span>
-        <strong>61</strong> / 100</p>
-    </div>
+      <li>
+        <span>Verbal</span>
+          <strong>61</strong> / 100
+      </li>
 
-    <div>
-      <p><span>Visual</span>
-      <strong>72</strong> / 100</p>
-    </div>
+      <li>
+        <span>Visual</span>
+        <strong>72</strong> / 100
+      </li>
+    </ul>
 
     <button>Continue</button>
   </div>
