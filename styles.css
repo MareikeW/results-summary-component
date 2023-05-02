@@ -157,7 +157,7 @@ li strong {
 }
 
 button {
-    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    background: hsl(223, 30%, 27%);
     border: none;
     border-radius: 128px;
     color: hsl(0, 0%, 100%);
@@ -170,4 +170,57 @@ button {
 
 button:hover {
     cursor: pointer;
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+}
+
+@media only screen and (min-width: 736px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section {
+        display: flex;
+        width: 736px;
+        margin-bottom: 2rem;
+    }
+
+    .result-component {
+        border-radius: 32px;
+        width: 368px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.954rem;
+        padding-top: 2.375rem;
+        padding-bottom: 2.1875rem;
+    }
+
+    .result-total {
+        width: 12.5rem;
+        height: 12.5rem;
+        padding-top: 2rem;
+    }
+
+    .result-component strong {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.9375rem;
+        text-align: center;
+        padding: 1.75rem 0 0.875rem 0;
+    }
+
+    h2 + p {
+        padding-bottom: 2.875rem;
+    }
+
+    .summary-component {
+
+    }
 }
