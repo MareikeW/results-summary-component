@@ -97,7 +97,7 @@ li .category {
     font-weight: normal;
     display: flex;
     align-items: center;
-    }
+}
 
 li .category::before {
     padding-right: 12px;
@@ -164,8 +164,8 @@ button {
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 1.4375rem;
-    padding: 1rem 6.625rem;
-    margin-top: 1.5625rem;
+    padding: 1rem 7.5rem;
+    margin-top: 0.5rem;
 }
 
 button:hover {
@@ -221,6 +221,17 @@ button:hover {
     }
 
     .summary-component {
+        margin: 1.5rem auto;
+        width: 18rem;
+    }
 
+    h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1.75rem;
+    }
+
+    button {
+        padding: 1rem 6.6875rem;
+        margin-top: 1.5625rem;
     }
 }
